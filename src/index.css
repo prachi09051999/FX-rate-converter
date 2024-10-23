@@ -7,7 +7,39 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.swap-arrow {
+  display: flex;
+  align-items: center; /* Center arrow vertically */
+  justify-content: center;
+  position: relative;
+}
+
+.swap-arrow::before {
+  content: '';
+  display: inline-block;
+  width: 60px; /* Length of the stick */
+  height: 2px; /* Thickness of the stick */
+  background-color: black; /* Color of the stick */
+}
+
+.swap-arrow::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid black; /* Size of the arrowhead */
+}
+
+
+
