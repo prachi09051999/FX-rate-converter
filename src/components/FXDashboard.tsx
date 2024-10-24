@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Select, Button, Card, Row, Col, Space, Typography } from 'antd';
+import { Select, Button, Row, Space } from 'antd';
 import { ArrowUpOutlined, ArrowDownOutlined } from '@ant-design/icons';
 import FXCard, { FXCardProps } from './FXcard';
 import apiKey from '../constants/commonConstants';

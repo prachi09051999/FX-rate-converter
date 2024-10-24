@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Space, Typography, Input, Button, Col } from 'antd';
-import { SwapOutlined, SyncOutlined, CloseOutlined } from '@ant-design/icons';
+import { SyncOutlined, CloseOutlined } from '@ant-design/icons';
 import { useDispatch } from 'react-redux';
 import { removeCard, reverseCardDetails, updateCardDetails } from '../store/fxCardListSlice';
 import apiKey from '../constants/commonConstants';
